@@ -1,0 +1,12 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Slack integration') {
+            steps {
+                echo 'testing slack connectivity with Jenkins'
+                slackSend channel: '#wanderprep-infra-team', message: 'testing slack integration with jenkins'
+            }
+        }
+    }
+}

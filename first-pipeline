@@ -1,0 +1,4 @@
+echo "Hello, this is my first jenkins pipeline that has given me a lot of headache today "
+pwd
+ls
+whoami
