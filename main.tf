@@ -5,6 +5,7 @@ resource "aws_instance" "wanderprep-web-server" {
   tags = {
     Name = "wanderprep-web-server"
   }
+  
 }
 resource "aws_instance" "wanderprep-prod-server" {
   ami           = var.ami_id
