@@ -6,12 +6,12 @@ resource "aws_instance" "wanderprep-web-server" {
     Name = "wanderprep-web-server"
   }
 }
-resource "aws_instance" "wanderprep-app-server" {
+resource "aws_instance" "wanderprep-prod-server" {
   ami           = var.ami_id
   instance_type = var.instance_type
 
   tags = {
-    Name = "wanderprep-app-server"
+    Name = "wanderprep-prod-server"
   }
 }
 /*
